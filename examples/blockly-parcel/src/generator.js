@@ -10,9 +10,10 @@
  * @author ettinger.boris@gmail.com (Boris Ettinger)
  */
 
+import * as goog from 'google-closure-library';
 import * as Blockly from 'blockly/core';
 import 'blockly/blocks';
-import 'blockly/python';
+import './generators/python';
 import * as En from 'blockly/msg/en';
 
 Blockly.setLocale(En);
