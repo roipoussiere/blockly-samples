@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.procedures');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 Blockly.Python['procedures_defreturn'] = function(block) {
@@ -131,3 +130,5 @@ Blockly.Python['procedures_ifreturn'] = function(block) {
   }
   return code;
 };
+
+export { Blockly };

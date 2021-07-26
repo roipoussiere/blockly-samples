@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.logic');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 Blockly.Python['controls_if'] = function(block) {
@@ -125,3 +124,5 @@ Blockly.Python['logic_ternary'] = function(block) {
   var code = value_then + ' if ' + value_if + ' else ' + value_else;
   return [code, Blockly.Python.ORDER_CONDITIONAL];
 };
+
+export { Blockly };

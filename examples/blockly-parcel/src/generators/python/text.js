@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.texts');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 Blockly.Python['text'] = function(block) {
@@ -295,3 +294,5 @@ Blockly.Python['text_reverse'] = function(block) {
   var code = text + '[::-1]';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
+
+export { Blockly };

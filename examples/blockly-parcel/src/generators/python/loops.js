@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.loops');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 Blockly.Python['controls_repeat_ext'] = function(block) {
@@ -212,3 +211,5 @@ Blockly.Python['controls_flow_statements'] = function(block) {
   }
   throw Error('Unknown flow statement.');
 };
+
+export { Blockly };

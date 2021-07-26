@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.math');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 // If any new block imports any library, add that library name here.
@@ -383,3 +382,5 @@ Blockly.Python['math_atan2'] = function(block) {
   return ['math.atan2(' + argument1 + ', ' + argument0 + ') / math.pi * 180',
       Blockly.Python.ORDER_MULTIPLICATIVE];
 };
+
+export { Blockly };

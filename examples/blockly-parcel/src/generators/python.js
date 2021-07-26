@@ -10,12 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python');
-
-goog.require('Blockly.Generator');
-goog.require('Blockly.inputTypes');
-goog.require('Blockly.utils.string');
-
+import * as src from 'blockly/core/generator';
+Blockly.Generator = src.Blockly.Generator;
 
 /**
  * Python code generator.
@@ -326,3 +322,5 @@ Blockly.Python.getAdjustedInt = function(block, atId, opt_delta, opt_negate) {
   }
   return at;
 };
+
+export { Blockly };

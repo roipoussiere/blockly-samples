@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.lists');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 Blockly.Python['lists_create_empty'] = function(block) {
@@ -347,3 +346,5 @@ Blockly.Python['lists_reverse'] = function(block) {
   var code = 'list(reversed(' + list + '))';
   return [code, Blockly.Python.ORDER_FUNCTION_CALL];
 };
+
+export('Blockly.Python.lists');

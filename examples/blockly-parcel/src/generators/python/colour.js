@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.colour');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 Blockly.Python['colour_picker'] = function(block) {
@@ -70,3 +69,5 @@ Blockly.Python['colour_blend'] = function(block) {
   var code = functionName + '(' + colour1 + ', ' + colour2 + ', ' + ratio + ')';
   return [code, Blockly.Python.ORDER_FUNCTION_CALL];
 };
+
+export { Blockly } ;

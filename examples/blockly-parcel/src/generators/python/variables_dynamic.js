@@ -10,12 +10,15 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.variablesDynamic');
+import * as src from '../python';
+import * as src_variables from '../python/variables';
 
-goog.require('Blockly.Python');
-goog.require('Blockly.Python.variables');
+Blockly.Python = src.Blockly.Python;
+
 
 
 // Python is dynamically typed.
 Blockly.Python['variables_get_dynamic'] = Blockly.Python['variables_get'];
 Blockly.Python['variables_set_dynamic'] = Blockly.Python['variables_set'];
+
+export { Blockly };

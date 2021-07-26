@@ -17,7 +17,6 @@
     "staticOutPath": "media"
   },
   "dependencies": {
-    "blockly": "^5.2",
-    "google-closure-library": "^20210601.0.0"
+    "blockly": "^5.2"
   }
 }

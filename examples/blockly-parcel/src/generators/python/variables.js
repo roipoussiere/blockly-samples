@@ -10,9 +10,8 @@
  */
 'use strict';
 
-goog.provide('Blockly.Python.variables');
-
-goog.require('Blockly.Python');
+import * as src from '../python';
+Blockly.Python = src.Blockly.Python;
 
 
 Blockly.Python['variables_get'] = function(block) {
@@ -30,3 +29,5 @@ Blockly.Python['variables_set'] = function(block) {
       Blockly.VARIABLE_CATEGORY_NAME);
   return varName + ' = ' + argument0 + '\n';
 };
+
+export { Blockly };
